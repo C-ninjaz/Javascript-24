@@ -1,0 +1,35 @@
+Problem statement:
+
+Write a program that converts every character of the user name as lowercase and 
+combines the first name and last name of the user.
+You have given the first name and last name of the user as the input. 
+The names of the users should be stored in lowercase only and the output should be a 
+combination of both First name and Last name.
+
+Input:-
+firstName: “JOHN”
+lastName: “DOE”
+
+Expected Output:-
+Username: johndoe
+
+Solution:
+
+function lowerCaseString(str1, str2) {
+let answer;
+// You have been provided with two input strings as parameters: str1 and str2
+// Example: str1 = "JOHN", str2 = "DOE"
+// Do not define or assign values to these inputs; they are provided automatically.
+
+// Task:
+// 1. Convert str1 and str2 to lowercase.
+// 2. Concatenate the two lowercase strings together.
+// 3. Store the result in the variable 'answer' below.
+
+// Write your logic here:
+let lowerCaseStr1 = str1.toLowerCase();
+let lowerCaseStr2 = str2.toLowerCase();
+answer = lowerCaseStr1.concat(lowerCaseStr2);
+console.log(answer);
+return answer; // The final concatenated string will be returned from here.
+}

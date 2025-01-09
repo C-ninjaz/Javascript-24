@@ -1,0 +1,26 @@
+-->> Problem statement:
+Create a function named temperatureInCelcius to analyze temperature data. The function should:
+
+Take a temperature in Celsius as input.
+Convert the temperature to Fahrenheit using the formula:
+Fahrenheit = (Celsius×9/5)+32
+Determine if the converted Fahrenheit value is greater than 86. If it is, return true; otherwise, return false.
+
+Input:
+Temperature(in celsius): 35
+Output
+true
+
+-->> Solution:
+
+function temperatureInCelcius(temperatureInCelsius) {
+  // Convert the temperature from Celsius to Fahrenheit
+  let fahrenheit;
+    fahrenheit = parseFloat((temperatureInCelsius*1.8) + 32);
+  // Check if the Fahrenheit value is greater than 86
+  let isHot;
+    isHot = fahrenheit > 86;
+
+  return isHot;
+}
+console.log(temperatureInCelcius(35));

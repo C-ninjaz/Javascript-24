@@ -1,0 +1,22 @@
+-->> Problem statement:
+Create a simple online shopping discount calculator. The program should take the input for the original price of a product and the discount percentage. It should then calculate and display the final discounted price.
+
+
+Input:-
+Original Value = "50.75"
+Discount Percentage = "15.5"
+Output:-
+Discounted Price = 42.88
+
+-->> Solution:
+//Convert the type to numbers
+//Calculate the discountedprice
+function shoppingDiscountCalculator(originalValue,discountPercentage){
+    let answer;
+	let a = parseFloat(discountPercentage)/100;
+    let b = parseFloat(originalValue) * a;
+	answer = parseFloat(originalValue) - b;
+    
+return answer
+    }
+console.log(shoppingDiscountCalculator(50.75,15.5));
