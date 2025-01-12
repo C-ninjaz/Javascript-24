@@ -1,0 +1,14 @@
+---->>> DO WHILE LOOP <<<-----
+
+// --->>> Syntax:
+// do {
+// }while(condition);
+// body of the loop;
+
+// let randomNumber = 8;
+let randomNumber = Math.round(Math.random() * 10);
+// console.log(randomNumber);
+let guessNumber;
+do {
+  guessNumber = prompt("Guess the number");
+} while (guessNumber != randomNumber);

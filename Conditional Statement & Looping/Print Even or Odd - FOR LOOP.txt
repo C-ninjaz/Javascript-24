@@ -1,0 +1,26 @@
+--> EVEN NUMBER
+// let i;
+// for (i = 0; i <= 50; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i);
+//   }
+// }
+// OR;
+// let k = 2;
+// for (; k <= 50; k += 2) {
+//   console.log(k);
+// }
+ */
+
+/* -->> ODD NUMBER
+// let k = 1;
+// for (; k <= 50; k += 2) {
+//   console.log(k);
+// }
+OR
+// let i;
+// for (i = 1; i <= 50; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(i);
+//   }
+// }

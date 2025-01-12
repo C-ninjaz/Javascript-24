@@ -1,0 +1,32 @@
+-->> Print Multiple Multiplication Table:
+
+ let i;
+ let num1;
+for (num1 = 1; num1 <= 10; num1++) 
+{
+  console.log(`Table of ${num1}`);
+  for (i = 1; i <= 10; i++) 
+  {
+    console.log(`${num1} x ${i} = ${num1 * i}`);
+  }
+}
+
+
+ --->> TO Print Numbers from 2 to 100 and find prime numbers in between them:
+let prime;
+console.log("Numbers from 2 to 100 are:");
+for (num = 2; num <= 100; num++) {
+  console.log(num);
+}
+console.log("Prime numbers in between 2 to 100 are:");
+for (num = 2; num <= 100; num++) {
+  let isPrime = true;
+  for (prime = 2; prime * prime <= num; prime++) {
+    if (num % prime === 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime) {
+    console.log(num);
+  }
+}

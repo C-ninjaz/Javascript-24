@@ -1,0 +1,44 @@
+--->> Problem statement
+Write a function (already given in the starter code as 'main') to determine if a patient has a fever based 
+on their body temperature. The temperature is given in Fahrenheit, and you need to convert it to Celsius 
+to make the determination.
+
+Input:-
+For an input temperature of 98.6 Fahrenheit, the function should return:
+Output:-
+You have a fever! Your temperature is 37.0°C.
+
+Test Cases:-
+There should be a correctly defined temperature function.
+
+1- Convert the temperature from Fahrenheit (tempF) to Celsius. Use the appropriate conversion formula.
+2- Then apply the if condition to check whether the converted value is greater than or equal to 37. 
+3- If the Celsius temperature is 37°C or higher, set the result variable to indicate a fever with the temperature rounded to one decimal place.
+4- If the Celsius temperature is below 37°C, set the result variable to indicate no fever, with the temperature also rounded to one decimal place.
+5- Return the result variable from the function.
+
+
+--->> Solution:
+//Do not alter anything else given in the starter code
+
+function main(tempF) {
+  let result;
+
+  // Step 1: Convert the temperature from Fahrenheit to Celsius.
+ 	let tempC = parseFloat((tempF-32)*5/9);
+  // Step 2: Store the converted temperature in a new variable. 
+    let newTempC = tempC;
+  // Step 3: Check if the rounded temperature is 37°C or higher with the help of if and else condition
+    if(newTempC>=37)
+        {
+            newTempC = newTempC.toFixed(1);
+    result = `You have a fever! Your temperature is ${newTempC}°C.`;
+        }
+    else{
+        newTempC = newTempC.toFixed(1);
+    result = `You don't have a fever! Your temperature is ${newTempC}°C.`
+    }
+  // Use the toFixed() method to format converted temperature in celcius to one decimal place.
+  return result;
+}
+console.log(main(50));
